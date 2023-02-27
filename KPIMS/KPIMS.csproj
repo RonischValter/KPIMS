@@ -26,6 +26,7 @@
     <PackageReference Include="Emgu.CV.runtime.windows" Version="4.6.0.5131" />
     <PackageReference Include="Emgu.CV.UI" Version="4.6.0.5131" />
     <PackageReference Include="OfficeOpenXml.Core.ExcelPackage" Version="1.0.0" />
+    <PackageReference Include="SpeedTest.NetCore" Version="2.1.0" />
   </ItemGroup>
 
 </Project>
