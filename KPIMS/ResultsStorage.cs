@@ -59,21 +59,21 @@ namespace KPI_measuring_software
             ws.Cells[1, numberOfRepeats + 2].Value = "Number of fails";
 
             //speed test
-            double? download = null;
-            try
-            {
-                download = SpeedTest();
-            }
-            catch (Exception) { }
-            ws.Cells[listOfResults.Count + 3, 1].value = "Download speed";
-            if (download != null)
-            {
-                ws.Cells[listOfResults.Count + 3, 2].value = download.ToString() +" MBps";
-            }
-            else
-            {
-                ws.Cells[listOfResults.Count + 3, 2].value = "NaN";
-            }
+            //double? download = null;
+            //try
+            //{
+            //    download = SpeedTest();
+            //}
+            //catch (Exception) { }
+            //ws.Cells[listOfResults.Count + 3, 1].value = "Download speed";
+            //if (download != null)
+            //{
+            //    ws.Cells[listOfResults.Count + 3, 2].value = download.ToString() +" MBps";
+            //}
+            //else
+            //{
+            //    ws.Cells[listOfResults.Count + 3, 2].value = "NaN";
+            //}
             ws.Cells[listOfResults.Count + 4, 1].value = "Ping data";
             ws.Cells[listOfResults.Count + 4, 2].value = GetPingInfo() ;
 
